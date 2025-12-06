@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Os Landgraf | terrasraras.com.br</title>
+  <meta name="description" content="A história da família Landgraf: de Wasungen a Pirassununga.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="/src/icon.png">
+  <style>
+    /* Estilos específicos para esta página */
+    .article-container { max-width: 800px; margin: 0 auto; padding-bottom: 4rem; }
+    
+    .article-block { margin-bottom: 4rem; text-align: justify; }
+    .article-block h2 { font-family: var(--font-display); color: var(--primary); margin-top: 2rem; margin-bottom: 1.5rem; font-size: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .article-block h3 { font-family: var(--font-display); color: var(--copper); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; }
+    .article-block p { margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.8; color: var(--foreground); }
+    
+    /* Estilo para Imagens e Legendas */
+    figure.img-container {
+        margin: 2rem 0;
+        text-align: center;
+        background: #fff;
+        padding: 1rem;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    
+    /* Placeholder cinza - Apenas para a DIV de fallback */
+    .img-placeholder {
+        background-color: #eee;
+        color: #777;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+        font-family: monospace;
+        border: 2px dashed #ccc;
+    }
+
+    /* A imagem real respeita a proporção (height: auto) */
+    figure img {
+        max-width: 100%;
+        height: auto; 
+        border-radius: 4px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-style: italic;
+        margin-top: 0.5rem;
+        font-family: var(--font-body);
+    }
+
+    /* Box de Curiosidade Histórica */
+    .history-sidebar {
+        background: var(--secondary);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 2rem 0;
+        font-size: 0.95rem;
+        border-left: 4px solid var(--accent);
+    }
+    .history-sidebar h4 {
+        color: var(--primary);
+        font-family: var(--font-display);
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+    
+    /* Estilo para Referência Documental */
+    .doc-ref {
+        font-size: 0.85rem;
+        color: #666;
+        background: #f9f9f9;
+        padding: 1rem;
+        border: 1px dotted #ccc;
+        margin-top: 1rem;
+    }
+
+    /* Genealogia */
+    .genealogy-tree { list-style: none; padding-left: 0; }
+    .genealogy-tree > li { margin-bottom: 2rem; background: #fff; padding: 1.5rem; border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .genealogy-tree strong { color: var(--primary); font-family: var(--font-display); font-size: 1.3rem; display: block; margin-bottom: 0.5rem; }
+    .descendants-list { list-style: none; padding-left: 1rem; margin-top: 1rem; font-size: 1rem; color: #555; border-left: 2px solid var(--border); margin-left: 0.5rem; }
+    .descendants-list li { margin-bottom: 0.8rem; padding-left: 0.8rem; position: relative; }
+    .descendants-list li span.code { 
+        display: inline-block; 
+        font-size: 0.75rem; 
+        color: #999; 
+        width: 45px; 
+        font-family: monospace; 
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb { margin-bottom: 2rem; font-size: 0.9rem; color: var(--muted); }
+    .breadcrumb a { text-decoration: none; color: var(--primary); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">terrasraras.com.br</a>
+      <nav class="nav-desktop">
+        <a href="familia.html" class="active">Família & Genealogia</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile">
+      <a href="familia.html">Família & Genealogia</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Os Landgraf</h1>
+      <p>A saga da família: de Wasungen, na Turíngia, para Pirassununga.</p>
+    </section>
+
+    <section class="content-section">
+      <div class="container article-container">
+        
+        <div class="breadcrumb">
+            <a href="familia.html">← Voltar para Família</a>
+        </div>
+
+        <article class="article-block">
+            <h2>Os Landgraf de Pirassununga</h2>
+            <p>Esta página conta um pouco da história e a genealogia da primeira família Landgraf a vir para o Brasil, junto com os Beck, Schneider, Säugling e outros, em 1861. Quatro irmãos Landgraf e seus pais vieram de Hamburgo no navio <em>Willinck</em>, da companhia Theodore Wille.</p>
+            <p>Vieram da pequena cidade de <strong>Wasungen</strong>, no que era naquele tempo um país independente, o ducado de Saxe-Meiningen, hoje Alemanha. Em 2001 realizei o sonho de lá levar meus pais, Cinézio e Cecília, e meus tios Arnaldo e Lourdes.</p>
+            <p>Vinte anos depois, um grande grupo de alemães (incluindo os Landgraf, os Säugling, os Beck e os Schneider) comprou terras e criou um pequeno bairro chamado <strong>Cachoeirinha</strong>, no caminho entre Pirassununga e Analândia.</p>
+            
+            <div class="history-sidebar">
+                <h4>📖 O Livro da Família</h4>
+                <p>No dia 26 de novembro de 2005 ocorreu em Pirassununga o lançamento do livro <strong>"Herdeiros de um sonho"</strong>, escrito por Cinézio Landgraf. O livro contém 150 páginas narrando nossa história e mais especificamente nosso ramo.</p>
+            </div>
+        </article>
+
+        <article class="article-block">
+            <h2>A Origem e o Brasão</h2>
+            <p>Ainda não sabemos quando surgiu o sobrenome Landgraf, mas sabemos que a palavra já existia por volta do ano 1000, correspondendo a título feudal, como conde ou duque. A tradução mais direta seria "conde da terra".</p>
+            
+            <figure class="img-container">
+                <img src="/img/brasao.png" alt="Escudo da Família Landgraf: O Leão em Riste" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">Inserir Imagem: Escudo (Leão em Riste)</div>
+                <figcaption>O "Leão em Riste": símbolo adotado pelos Landgraf da Turíngia por volta de 1100.</figcaption>
+            </figure>
+
+            <h3>Hermann e a História Alemã</h3>
+            <p>O título Landgraf adquire importância na época das cruzadas. Um dos mais famosos foi <strong>Hermann I</strong>. A corte de Hermann, no castelo de Wartburg, tinha a presença dos maiores poetas alemães daquele século. A importância de sua corte era tão grande que a ópera Tannhauser, de Wagner, o menciona explicitamente.</p>
+
+            <figure class="img-container">
+                <img src="img/hermann.jpg" alt="Landgraf Hermann I da Turíngia" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">Inserir Imagem: Landgraf Hermann</div>
+                <figcaption>Landgraf Hermann I da Turíngia, patrono das artes no Castelo de Wartburg.</figcaption>
+            </figure>
+
+            <div class="history-sidebar">
+                <h4>Santa Isabel da Hungria</h4>
+                <p>O filho de Hermann, Ludwig IV, casou-se com uma moça que virou santa, Santa Isabel (Elisabeth). Ela é famosa pelo "milagre das rosas". As igrejas franciscanas de Recife e de Olinda têm quadros retratando ela.</p>
+            </div>
+        </article>
+
+        <article class="article-block">
+            <h2>Os Ancestrais em Wasungen</h2>
+            <p>Além de confirmar que nossos Landgraf vieram mesmo de Wasungen, estendemos nossa árvore genealógica até 1690. Wasungen é uma pequena cidade da Alemanha, hoje no estado da Turíngia, às margens do Rio Werra.</p>
+
+            <figure class="img-container">
+                <img src="img/relevoalemanha.jpeg" alt="Mapa de Wasungen e região" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">Inserir Imagem: Mapa de Wasungen</div>
+                <figcaption>Mapa mostrando a região de Wasungen e Kaltennordheim, origem dos ancestrais.</figcaption>
+            </figure>
+
+            <h3>Linhagem Ancestral</h3>
+            <ul class="genealogy-tree">
+                <li>
+                    <strong>Heinrich Landgraf (1690-1758)</strong>
+                    <div class="descendants-list">Fabricante de óleo. Nascido em Kaltennordheim. Mudou-se para Wasungen após um incêndio.</div>
+                </li>
+                <li>
+                    <strong>Johan Christian Landgraf (1735-1797)</strong>
+                    <div class="descendants-list">Fabricante de óleo. Nascido em Wasungen.</div>
+                </li>
+                <li>
+                    <strong>Johan Michael Landgraf (1761-1835)</strong>
+                    <div class="descendants-list">Diarista. Teve 10 filhos.</div>
+                </li>
+                <li>
+                    <strong>Johann Georg Landgraf (1805-186?)</strong>
+                    <div class="descendants-list">Nosso ancestral que veio ao Brasil. Nascido em 26/07/1805. Casado com Elisabeth Margarethe Kiehm.</div>
+                </li>
+            </ul>
+        </article>
+
+        <article class="article-block">
+            <h2>A Partida de Hamburgo (1861)</h2>
+            <p>Segundo informa o Escritório da História da Emigração do <em>Museum für Hamburgische Geschichte</em> (Hamburgo, Alemanha), a família embarcou no dia <strong>15 de Abril de 1861</strong>. Eles vieram todos de Meiningen, ou seja, do ducado de <em>Sachsen-Meiningen</em>, um "mini país" prestes a ser engolido pela unificação alemã de Bismarck.</p>
+            
+            <figure class="img-container">
+                <img src="img/documento.jpg" alt="Registro de embarque no porto de Hamburgo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">Inserir Imagem: Documento Verzeichnis (Pág 121)</div>
+                <figcaption>
+                    Registro original de embarque (Livro Verzeichnis, pág. 121, filme K1708). <br>
+                    Lista a família Landgraf a bordo do navio <em>Willinck</em>.
+                </figcaption>
+            </figure>
+
+            <p>O documento de embarque confirma que viajaram no navio chamado <strong>Willinck</strong> a seguinte composição familiar:</p>
+            
+            <ul class="descendants-list">
+                <li><strong>Georg Landgraf:</strong> nascido em 1806 (aprox. 55 anos).</li>
+                <li><strong>Elisabeth:</strong> sua esposa, 50 anos.</li>
+                <li><strong>Christian:</strong> filho, 31 anos. Já era casado e trouxe a esposa <strong>Frederike</strong> (31 anos), o filho <strong>Elias</strong> (3 anos) e a filha <strong>Antonie</strong>.</li>
+                <li><strong>Ernst:</strong> filho, 18 anos.</li>
+                <li><strong>Susanne:</strong> filha, 16 anos. <em>(Nota: as idades são compatíveis com a paróquia, exceto por Susanne, que não constava na lista original da igreja).</em></li>
+                <li><strong>Richard:</strong> filho, 12 anos.</li>
+            </ul>
+
+            <p>No mesmo navio, com destino a Santos, viajavam também as famílias <strong>Fischer, Maler, Beck e Säugling</strong>, todas oriundas de Meiningen. Vale notar que Daniel Säugling era casado com Eva Bernardine, irmã de Christian Landgraf.</p>
+
+            <div class="history-sidebar">
+                <h4>O Compromisso com Theodore Wille</h4>
+                <p><em>"O assinante... se obriga a fechar o contrato com um fazendeiro brasileiro... para trabalhar em uma colônia na província de São Paulo... a pagar pelo produto parcial de seu trabalho a passagem e os custos decorrentes."</em></p>
+            </div>
+
+            <div class="doc-ref">
+                <strong>Fonte Documental:</strong> Fotocópia do livro <em>Verzeichnis</em>, pág. 121, número 15, filme K1708. Obtido por Mercedes Wensel (irmã de Max Wenzel) a pedido de Cinézio Landgraf.
+            </div>
+        </article>
+
+        <article class="article-block">
+            <h2>Primeira Geração no Brasil</h2>
+            <p>Abaixo, os filhos de Johann Georg Landgraf que iniciaram a história da família no Brasil.</p>
+            
+            <ul class="genealogy-tree">
+                <li>
+                    <strong>I. Christiano Landgraf (1830-1896)</strong>
+                    <ul class="descendants-list">
+                        <li>Primeiro filho. Veio com a esposa <strong>Frederika Enk</strong> (mencionada no documento de Hamburgo) e os filhos pequenos. Casou depois com Maria Kastein.</li>
+                        <li><span class="code">I.F1</span> <b>Elias</b> (1858-1917) c/ Ana Beck (chegou ao Brasil com 3 anos).</li>
+                        <li><span class="code">I.F2</span> <b>Antonia</b> (1859-1956) c/ Cap. Fernando Braun (chegou criança).</li>
+                        <li><span class="code">I.F4</span> <b>Gustavo</b> (1863-1942) c/ Leduvina Schneider</li>
+                        <li><span class="code">I.F5</span> <b>Benedito</b> (1866-1949) c/ Ernestina Beck</li>
+                        <li><span class="code">I.F7</span> <b>Bernardo</b> c/ Leveta Beck</li>
+                        <li><span class="code">I.F9</span> <b>Amélia</b> (1895-1938) c/ Anibal Magalhães Carvalho</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>II. Eva Bernardine (1832-1919)</strong>
+                    <ul class="descendants-list">
+                        <li>Casada com Daniel Säugling. Viajaram no mesmo navio <em>Willinck</em>. Ancestral da família Säugling.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>III. Ernesto Landgraf (1843-1932)</strong>
+                    <ul class="descendants-list">
+                        <li>Chegou ao Brasil com 18 anos. Casou-se 3 vezes (Louise Schneider, Augusta Habermann, Ana Boller).</li>
+                        <li><span class="code">1º Cas</span> Cristiano, Bernardo, Augusto, João, Simão, Ernesto, Ricardo, Leveta, Carlos, Suzana.</li>
+                        <li><span class="code">2º Cas</span> Augusta Guilhermina, Otto, Jorge, Maria, Augusta.</li>
+                        <li><span class="code">3º Cas</span> A 3ª esposa trouxe mais 13 filhos.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>IV. Suzana Landgraf (1845-?)</strong>
+                    <ul class="descendants-list">
+                        <li>Chegou ao Brasil com 16 anos. Ficou em São Paulo na chegada.</li>
+                        <li>A notícia que temos é que todos os filhos dela morreram de tuberculose.</li>
+                        <li><span class="code">IV.F1</span> <b>Geni</b></li>
+                        <li><span class="code">IV.F2</span> <b>Gastão</b></li>
+                        <li><span class="code">IV.F3</span> <b>Fernando</b></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>V. Richard Landgraf (1849-1924)</strong>
+                    <ul class="descendants-list">
+                        <li>Nascido em 20/01/1849 em Wasungen. Chegou com 12 anos. Casado com Sofia Mahler.</li>
+                        <li>Mudou-se para a <strong>Fazenda Guatapará</strong> em Ribeirão Preto.</li>
+                        <li><span class="code">V.F1</span> <b>Bernhard</b> (nascido em 1871)</li>
+                        <li><span class="code">V.F2</span> <b>Antonia</b> (nascida em 1880)</li>
+                        <li><span class="code">V.F3</span> <b>Antonio</b> (nascido em 1883)</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+
+        <div class="breadcrumb" style="text-align: center; margin-top: 3rem;">
+            <a href="familia.html" class="btn-primary">← Voltar para Menu da Família</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>terrasraras.com.br</h4>
+        <p>Um mosaico pessoal onde a ciência, história e família se encontram.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <a href="mailto:f.landgraf@usp.br">📧 f.landgraf@usp.br</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Sítio iniciado em 2001</p>
+      <p>Última alteração: Dezembro 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

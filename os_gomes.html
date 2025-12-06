@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Os Gomes | terrasraras.com.br</title>
+  <meta name="description" content="A história da família Gomes de Brazópolis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="/src/icon.png">
+  <style>
+    /* Estilos específicos para esta página (Mesmo padrão de os_landgraf.html) */
+    .article-container { max-width: 800px; margin: 0 auto; padding-bottom: 4rem; }
+    
+    .article-block { margin-bottom: 4rem; text-align: justify; }
+    .article-block h2 { font-family: var(--font-display); color: var(--primary); margin-top: 2rem; margin-bottom: 1.5rem; font-size: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .article-block h3 { font-family: var(--font-display); color: var(--copper); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; }
+    .article-block p { margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.8; color: var(--foreground); }
+    
+    /* Estilo para Imagens e Legendas */
+    figure.img-container {
+        margin: 2rem 0;
+        text-align: center;
+        background: #fff;
+        padding: 1rem;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    
+    /* Placeholder cinza - Apenas para a DIV de fallback */
+    .img-placeholder {
+        background-color: #eee;
+        color: #777;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+        font-family: monospace;
+        border: 2px dashed #ccc;
+    }
+
+    /* A imagem real respeita a proporção (height: auto) */
+    figure img {
+        max-width: 100%;
+        height: auto; 
+        border-radius: 4px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-style: italic;
+        margin-top: 0.5rem;
+        font-family: var(--font-body);
+    }
+
+    /* Box de Curiosidade Histórica */
+    .history-sidebar {
+        background: var(--secondary);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 2rem 0;
+        font-size: 0.95rem;
+        border-left: 4px solid var(--accent);
+    }
+    .history-sidebar h4 {
+        color: var(--primary);
+        font-family: var(--font-display);
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    /* Genealogia */
+    .genealogy-tree { list-style: none; padding-left: 0; }
+    .genealogy-tree > li { margin-bottom: 2rem; background: #fff; padding: 1.5rem; border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .genealogy-tree strong { color: var(--primary); font-family: var(--font-display); font-size: 1.3rem; display: block; margin-bottom: 0.5rem; }
+    .descendants-list { list-style: none; padding-left: 1rem; margin-top: 1rem; font-size: 1rem; color: #555; border-left: 2px solid var(--border); margin-left: 0.5rem; }
+    .descendants-list li { margin-bottom: 0.8rem; padding-left: 0.8rem; position: relative; }
+    .descendants-list li span.code { 
+        display: inline-block; 
+        font-size: 0.75rem; 
+        color: #999; 
+        width: 100px; /* Um pouco mais largo para os códigos longos dos Gomes */
+        font-family: monospace; 
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb { margin-bottom: 2rem; font-size: 0.9rem; color: var(--muted); }
+    .breadcrumb a { text-decoration: none; color: var(--primary); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">terrasraras.com.br</a>
+      <nav class="nav-desktop">
+        <a href="familia.html" class="active">Família & Genealogia</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile">
+      <a href="familia.html">Família & Genealogia</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Os Gomes</h1>
+      <p>A história dos Gomes de Brazópolis e sua influência no sul de Minas Gerais.</p>
+    </section>
+
+    <section class="content-section">
+      <div class="container article-container">
+        
+        <div class="breadcrumb">
+            <a href="familia.html">← Voltar para Família</a>
+        </div>
+
+        <!-- 1. INTRODUÇÃO -->
+        <article class="article-block">
+            <h2>Os Gomes de Brazópolis</h2>
+            <p><strong>Brazópolis</strong> é uma cidade do sul de Minas Gerais, até 1909 conhecida como São Caetano da Vargem Grande, um distrito de Itajubá. Seu nome atual é uma homenagem a um filho da terra, <strong>Francisco Braz Pereira Gomes</strong>, nosso ancestral, político importante na província mineira entre 1880 e 1914, e pai de Wenceslau Braz Pereira Gomes, presidente do Brasil entre 1914 e 1918.</p>
+            
+            <!-- CAMPO DE IMAGEM: CARTÃO POSTAL -->
+            <figure class="img-container">
+                <!-- Substitua o src pelo caminho real da imagem -->
+                <img src="/img/brazopolis.jpg" alt="Cartão postal de Brazópolis em 1900" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">Inserir Imagem: Cartão Postal (1900)</div>
+                <figcaption>Cartão postal enviado por Zéquinha Gomes em 1971, retratando a cidade em 1900. Na casa indicada pela seta viveram Pedro Gomes, Tonico Rennó e Francisco Brás.</figcaption>
+            </figure>
+
+            <p>José Alfredo Gomes, o "Vô Zequinha", foi um autodidata que aprendeu francês suficiente para traduzir poemas. Foi prefeito-interventor nomeado pelo governo revolucionário de outubro de 1930 e, mais tarde, ferrenho opositor de Getúlio Vargas. Como líder da UDN brasopolense nos anos 50, editou o jornal <em>Em Guarda</em> de 1951 a 1955.</p>
+            
+            <div class="history-sidebar">
+                <h4>Memórias de Família</h4>
+                <p>De minha avó Evangelina, lembro-me de seus olhos azuis límpidos, seus biscoitos de polvilho no meio da tarde e de seu esforço para amenizar o conflito de gerações em 1969, sugerindo substituir "abaixo a ditadura" por "abaixo a dentadura" na minha fantasia de carnaval.</p>
+            </div>
+        </article>
+
+        <!-- 2. ORIGEM DO SOBRENOME -->
+        <article class="article-block">
+            <h2>Origem do Sobrenome</h2>
+            <p>O sobrenome Gomes é comum na Espanha e em Portugal. Segundo alguns estudos, é um sobrenome de formação patronímica: filho de Goma (do gótico <em>guma</em>, homem). A forma primitiva seria Gomici, evoluindo para Gomece, Gomez e finalmente Gomes.</p>
+            <p>Quase nada sabemos da vida do fundador da descendência, <strong>Antonio José Gomes</strong>, o português que aos 18 anos estabeleceu-se no Córrego dos Bugres, bairro do Maranhão (hoje parte de Virgínia/MG) no início do século XIX. Ele faleceu em 10/12/1831 na fazenda S. João, cujos filhos continuaram proprietários.</p>
+        </article>
+
+        <!-- 3. GENEALOGIA -->
+        <article class="article-block">
+            <h2>A Descendência no Brasil</h2>
+            <p>Abaixo, a estrutura genealógica a partir do fundador Antonio José Gomes.</p>
+            
+            <ul class="genealogy-tree">
+                <!-- 1ª Geração -->
+                <li>
+                    <strong>1ª Geração: O Fundador</strong>
+                    <div class="descendants-list">
+                        <p><strong>Antonio José Gomes (I)</strong> nascido em Portugal. Casado com Maria Flausina de Jesus.</p>
+                        <ul>
+                            <li><span class="code">I.F1</span> Antonio José Gomes ("um tanto extravagante")</li>
+                            <li><span class="code">I.F2</span> Francisco José Gomes</li>
+                            <li><span class="code">I.F3</span> <strong>Manoel José Pereira Gomes</strong> (Capitão Gomes) - 1806-1879</li>
+                            <li><span class="code">I.F4</span> Anna (c/ Pedro Veloso)</li>
+                            <li><span class="code">I.F5</span> Claudina (c/ Tte Joaquim Pereira Dias)</li>
+                            <li><span class="code">I.F6</span> Thereza (c/ Francisco José Tavares)</li>
+                            <li><span class="code">I.F7</span> Mariana (c/ Aleixo José Fernandes)</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 2ª Geração -->
+                <li>
+                    <strong>2ª Geração: Filhos do Capitão Gomes</strong>
+                    <div class="descendants-list">
+                        <p><strong>Manoel José Pereira Gomes (I.F3)</strong> foi prefeito de Itajubá em 1862. Casado com Flausina Maria de S. José. Tiveram 14 filhos, dos quais seguimos:</p>
+                        <ul>
+                            <li><span class="code">I.F3.N5</span> <strong>Francisco Braz Pereira Gomes</strong> (1840-1914). Casado com Isabel Pereira dos Santos. Líder conservador.</li>
+                            <li><span class="code">I.F3.N11</span> <strong>Pedro Gomes</strong> (1850-?). Casado com Ana Inácia de Oliveira. Abolicionista e republicano.</li>
+                        </ul>
+                        <p><em>Nota: Francisco e Pedro eram irmãos e antagonistas políticos em Vargem Grande.</em></p>
+                    </div>
+                </li>
+
+                <!-- 3ª Geração -->
+                <li>
+                    <strong>3ª Geração: Os Ramos Políticos</strong>
+                    <div class="descendants-list">
+                        <p><strong>Filhos de Francisco Braz (I.F3.N5):</strong></p>
+                        <ul>
+                            <li><span class="code">I.F3.N5.B1</span> Henrique Braz Pereira Gomes</li>
+                            <li><span class="code">I.F3.N5.B2</span> José Braz Pereira Gomes</li>
+                            <li><span class="code">I.F3.N5.B3</span> <strong>Wenceslau Braz Pereira Gomes</strong> (1868). Presidente do Brasil (1914-1918).</li>
+                            <li><span class="code">I.F3.N5.B4</span> Julia Amalia Pereira Gomes (c/ Antonio José Rennó Junior).</li>
+                            <li><span class="code">Outros:</span> Arthur, Adolfo, Amando, Julieta, Julita.</li>
+                        </ul>
+                        <br>
+                        <p><strong>Filhos de Pedro Gomes (I.F3.N11):</strong></p>
+                        <ul>
+                            <li><span class="code">I.F3.N11.B2</span> <strong>José Alfredo Gomes</strong> (1884-1980). Casado com sua prima Evangelina Gomes Rennó (neta de Francisco Braz).</li>
+                            <li><span class="code">Outros:</span> Sebastião, Cecilia, Maria José, Emília, Ignácio Leão, Julio, Manoel Ivo, Pedro Gomes Filho, Adeodato.</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 4ª Geração -->
+                <li>
+                    <strong>4ª Geração: Família de José Alfredo Gomes</strong>
+                    <div class="descendants-list">
+                        <p><strong>José Alfredo Gomes (I.F3.N11.B2)</strong> casou-se com Evangelina Gomes Rennó. Seus filhos:</p>
+                        <ul>
+                            <li><span class="code">T1</span> <strong>Mário Rennó Gomes</strong> (1918-1987). Eng. Metalurgista. C/ Clarice Pereira Rosa.</li>
+                            <li><span class="code">T2</span> <strong>Lúcio Rennó Gomes</strong> (1919-1965). C/ Eneida Spolzino Gomes.</li>
+                            <li><span class="code">T3</span> <strong>Maria Helena Gomes Lisboa</strong> (1922). C/ Antonio Magalhães Lisboa.</li>
+                            <li><span class="code">T4</span> <strong>Ana Júlia</strong> (1927). C/ José Vieira de Mendonça Sobrinho.</li>
+                            <li><span class="code">T5</span> <strong>Cecília Vitória Gomes</strong> (1930). Casou-se com <strong>Cinézio Landgraf</strong>.</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 5ª Geração -->
+                <li>
+                    <strong>5ª Geração (Parcial)</strong>
+                    <div class="descendants-list">
+                        <p><strong>Filhos de Cecília Gomes e Cinézio Landgraf (I.F3.N11.B2.T5):</strong></p>
+                        <ul>
+                            <li><span class="code">TT1</span> <strong>Fernando José Gomes Landgraf</strong> (nascido em 1954).</li>
+                            <li><span class="code">TT2</span> <strong>Cecília Gomes Landgraf</strong> (nascida em 1958).</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        
+        <div class="breadcrumb" style="text-align: center; margin-top: 3rem;">
+            <a href="familia.html" class="btn-primary">← Voltar para Menu da Família</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>terrasraras.com.br</h4>
+        <p>Um mosaico pessoal onde a ciência, história e família se encontram.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <a href="mailto:f.landgraf@usp.br">📧 f.landgraf@usp.br</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Sítio iniciado em 2001</p>
+      <p>Última alteração: Dezembro 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
