@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joana & Martim | GeneGraf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="/src/icon.png">
+  
+  <style>
+    .bio-container { max-width: 800px; margin: 0 auto; padding: 2rem 0 4rem; }
+    
+    .timeline-block {
+        border-left: 3px solid var(--border);
+        padding-left: 2rem;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .timeline-block::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background-color: var(--primary);
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+
+    .timeline-year {
+        font-family: var(--font-display);
+        color: var(--primary);
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .bio-text { font-size: 1.05rem; line-height: 1.8; color: #333; margin-bottom: 1rem; text-align: justify; }
+
+    /* Estilo das Imagens */
+    figure.bio-figure { 
+        margin: 1.5rem 0; 
+        text-align: center; 
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+    }
+    figure.bio-figure img { 
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 4px; 
+    }
+    figure.bio-figure figcaption { 
+        font-size: 0.9rem; 
+        color: #666; 
+        margin-top: 10px; 
+        font-style: italic; 
+    }
+    
+    .img-placeholder { 
+        background: #eee; 
+        height: 250px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        color: #777; 
+        border: 2px dashed #ccc; 
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Destaque para Lara e Ilana */
+    .special-note {
+        background-color: #fff0f5;
+        border: 1px solid #ffc0cb;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-top: 2rem;
+        margin-bottom: 3rem; /* Espaço extra antes do Martim */
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">GeneGraf</a>
+      <nav class="nav-desktop">
+        <a href="familia.html">Voltar para Menu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Joana & Martim</h1>
+      <p>Minha vida, meus amigos e a chegada do meu irmão.</p>
+    </section>
+
+    <section class="content-section">
+      <div class="container bio-container">
+        
+        <div class="timeline-block">
+            <span class="timeline-year">1991: O Início</span>
+            <p class="bio-text">
+                Eu, Joana, nasci em 30 de dezembro de 1991. No outro dia era Réveillon; meu pai e minha mãe viram os fogos de artifício pela janela da maternidade.
+            </p>
+            <p class="bio-text">
+                Meus primeiros amigos foram meus vizinhos, a Ana e o Arthur Sheldon.
+            </p>
+            
+            <figure class="bio-figure">
+                <img src="img/Image7.jpg" alt="Primeiros amigos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: Primeiros Amigos (Ana e Arthur)</div>
+                <figcaption>Meus primeiros amigos e vizinhos.</figcaption>
+            </figure>
+        </div>
+
+        <div class="timeline-block">
+            <span class="timeline-year">1 Ano: Arraial das Cores</span>
+            <p class="bio-text">
+                Quando fiz 1 ano fui para uma escola chamada Arraial das Cores, onde conheci a Débora. Eu adorava ela, eu só tinha foto com ela. Com dois anos ainda estava naquela escola.
+            </p>
+            <figure class="bio-figure">
+                <img src="img/Image8.jpg" alt="Festa Arraial 1 Ano" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: Festa Arraial (1 ano)</div>
+                <figcaption>Na escola Arraial das Cores.</figcaption>
+            </figure>
+        </div>
+
+        <div class="timeline-block">
+            <span class="timeline-year">3 Anos: O Verinha</span>
+            <p class="bio-text">
+                Com três anos eu e a Débora fomos para o Colégio Vera Cruz ("Verinha"). Continuávamos amigas, e o legal foi que fiz amizade com a Laura, a Sofia, Giovana, Ana Luíza, Violeta e muitos mais. Minhas professoras no Maternal foram a Naninha e a Carol. No meu aniversário todo mundo se pintou.
+            </p>
+            <figure class="bio-figure">
+                <img src="img/Image3.jpg" alt="Joana e Débora" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: 3 anos com a Débora</div>
+                <figcaption>Amizade que veio do berço.</figcaption>
+            </figure>
+        </div>
+
+        <div class="timeline-block">
+            <span class="timeline-year">4 Anos: Mulher Rendeira</span>
+            <p class="bio-text">
+                Quando fiz quatro anos eu era muito amiga da Laura e da Débora, e sempre brincava de pelúcia, boneca, de Barbie e mais coisas. Nossa professora era a Terezinha. Para apresentar a música "Mulher Rendeira" nossos pais fizeram nossas roupas e nos pintaram.
+            </p>
+            <figure class="bio-figure">
+                <img src="img/Image9.jpg" alt="Amiga da Laura" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: 4 anos (amiga da Laura)</div>
+            </figure>
+        </div>
+
+        <div class="timeline-block">
+            <span class="timeline-year">5 Anos: Jardim II (1997)</span>
+            <p class="bio-text">
+                Fui para o Jardim II. O irmão mais velho da Débora passou para o Vera, que é à tarde, e a mãe dela achou melhor ela também ir para a tarde, mas eu não fui. Continuamos indo uma na casa da outra. Eu, a Laura e a Sofia ficamos muito, muito amigas.
+            </p>
+            <figure class="bio-figure">
+                <img src="img/Image10.jpg" alt="Jardim II" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: 5 anos (Jardim II)</div>
+            </figure>
+        </div>
+
+        <div class="timeline-block">
+            <span class="timeline-year">6 Anos: O Trio Calafrio</span>
+            <p class="bio-text">
+                Entrei no Pré e entrou uma menina nova, a Clio. Ela é muito legal e engraçada. Temos muitas coisas em comum, como as atitudes, mas ela ainda preferia a Laura e a Sofia. Formaram o "Trio Calafrio". Eu e a Ana Luíza ficamos muito amigas e fizemos o trabalho do Cavalo Marinho.
+            </p>
+            <figure class="bio-figure">
+                <img src="img/Image4.jpg" alt="Trabalho do Cavalo Marinho" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: 6 anos (Cavalo Marinho)</div>
+                <figcaption>O trabalho escolar com a Ana Luíza.</figcaption>
+            </figure>
+        </div>
+
+        <div class="timeline-block">
+            <span class="timeline-year">1ª Série: Nasce o Martim (1999)</span>
+            <p class="bio-text">
+                Na primeira série a Ana Luíza saiu e foi para o Santa Cruz, e entrou muita gente nova. Eu entrei no trio e viramos o "Quarteto".
+            </p>
+            
+            <div style="background-color: #e3f2fd; padding: 15px; border-radius: 8px; border-left: 4px solid var(--primary); margin: 20px 0;">
+                <h3 style="margin-top:0; color: var(--primary);">👶 A Chegada do Irmão</h3>
+                <p class="bio-text" style="margin-bottom:0;">
+                    Meu irmão <strong>Martim</strong> nasceu em julho. Como a Clio adora neném, tiramos essa foto.
+                </p>
+            </div>
+
+            <figure class="bio-figure">
+                <img src="img/Image5.jpg" alt="Nascimento do Martim" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: 1ª Série / Martim bebê</div>
+                <figcaption>O Martim recém-nascido (com a Clio).</figcaption>
+            </figure>
+        </div>
+
+        <div class="timeline-block">
+            <span class="timeline-year">2ª Série: Reencontros</span>
+            <p class="bio-text">
+                Era o último ano no Verinha e eu fiquei aflita porque na segunda série as turmas seriam misturadas. Quando soube que a Débora viria para minha classe fiquei tão feliz!
+            </p>
+            <p class="bio-text">
+                Conheci a Laura que foi apelidada de "Laura morena". Toda quinta-feira dava carona a ela e nas terças-feiras eu ia com ela. Fiquei com muita gente legal como: Anna C., Clio, Débora, Elisa, Flora, Laura, Letícia K., Letícia F., Sofia, Violeta.
+            </p>
+            <figure class="bio-figure">
+                <img src="img/Image6.jpg" alt="Débora na minha classe" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: Débora na classe</div>
+                <figcaption>Felicidade de ter a amiga de volta na mesma turma.</figcaption>
+            </figure>
+        </div>
+
+        <div class="special-note">
+            <h3 style="color: #d81b60; margin-top: 0;">❤️ Lara e Ilana</h3>
+            <p class="bio-text">
+                Ops, eu esqueci de falar sobre a LARA e a ILANA. Elas me conheceram muito antes que todo mundo. Elas me viram com dias de idade porque elas são bem mais velhas que eu. Me viram crescer!!!! São super, luper, hiper, liper, mega legais!!!!!!!!!!!!!!!!!!!!!!!
+            </p>
+        </div>
+
+        <div class="timeline-block" style="border-left-color: var(--copper);">
+            <span class="timeline-year" style="color: var(--copper);">O Caçula: Martim</span>
+            
+            <figure class="bio-figure">
+                <img src="img/martim.jpg" alt="Martim em Amsterdam" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="img-placeholder" style="display:none">📸 Inserir Imagem: Martim com bastão</div>
+                <figcaption>
+                    Martim, em Amsterdam, depois de encontrar um bastão de beisebol.
+                </figcaption>
+            </figure>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="familia.html" class="btn-primary">← Voltar para o Menu</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-section">
+            <h4>terrasraras.com.br</h4>
+            <p>Um mosaico pessoal onde a ciência, história e família se encontram.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <a href="mailto:lucaslandgraaf@gmail.com">📧 lucaslandgraaf@gmail.com</a>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>Sítio iniciado em 2001</p>
+        <p>Última alteração: Dezembro 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -9,6 +9,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="icon" href="img/icon.png">
+  
+  <style>
+    /* Pequeno ajuste para garantir que o rodapé separe os itens nas pontas */
+    .footer-content {
+        display: flex;
+        justify-content: space-between; /* Empurra um para cada lado */
+        align-items: center; /* Alinha verticalmente */
+    }
+    
+    /* Garante alinhamento à direita no mobile e desktop */
+    .footer-right {
+        text-align: right;
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.5rem;
+        }
+        .footer-right {
+            text-align: center;
+        }
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -62,20 +87,13 @@
         <h4>terrasraras.com.br</h4>
         <p>Um mosaico pessoal onde a ciência, história e família se encontram.</p>
       </div>
-      <div class="footer-section">
+      
+      <div class="footer-section footer-right">
         <h4>Contato</h4>
         <a href="mailto:lucaslandgraaf@gmail.com">📧 lucaslandgraaf@gmail.com</a>
       </div>
-      <div class="footer-section">
-        <h4>Pessoas</h4>
-        <div class="footer-links">
-          <a href="#">Joana</a>
-          <a href="#">Martim</a>
-          <a href="#">Jaqueline</a>
-          <a href="#">Tonico Rennó</a>
-        </div>
-      </div>
     </div>
+    
     <div class="container footer-bottom">
       <p>O site foi iniciado em 2001</p>
       <p>Última alteração: Dezembro 2025</p>
