@@ -85,4 +85,4 @@ Este projeto é um acervo familiar.
 *   **Código:** O código fonte (HTML/CSS/JS) está disponível para fins educacionais.
 *   **Conteúdo:** As fotos, textos históricos e documentos digitalizados pertencem ao acervo da família Landgraf e aos autores citados. A reprodução destes materiais para fins comerciais é vedada sem autorização prévia.
 
-<p align="center"> Feito com 🤎 por Lucas Landgraf </p>
+<p align="center"> Feito com ❤️ por Lucas Landgraf </p>
