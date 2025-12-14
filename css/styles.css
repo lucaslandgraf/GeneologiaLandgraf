@@ -544,3 +544,125 @@ body {
   color: var(--muted);
   margin-top: 0.25rem;
 }
+
+/* =========================================
+   ESTILOS DA CRÔNICA (Migrado do HTML)
+   ========================================= */
+
+.chronicle-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+
+.chronicle-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+    /* Alinhamento à esquerda é melhor para leitura em telas pequenas. 
+       Se quiser justificado, descomente as duas linhas abaixo: */
+    text-align: left;
+    /* text-align: justify; */
+    /* hyphens: auto; */
+}
+
+/* Títulos coloridos da crônica */
+.chronicle-title, .chronicle-subtitle {
+    color: var(--primary); /* Certifique-se que essa var existe no topo do CSS */
+    font-family: var(--font-display);
+    margin-bottom: 1.5rem;
+}
+.chronicle-subtitle {
+    margin-top: 3rem;
+}
+
+.chronicle-highlight {
+    background-color: #fdfbf7;
+    border-left: 4px solid var(--copper);
+    padding: 20px;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* --- FOTOS E FIGURAS --- */
+figure.memory-figure {
+    margin: 2rem 0;
+    text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+figure.memory-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    max-height: 500px;
+}
+
+figure.memory-figure figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    font-family: var(--font-body);
+    font-style: italic;
+}
+
+/* Placeholder para imagem quebrada */
+.img-missing {
+    background-color: #eee;
+    border: 2px dashed #ccc;
+    color: #777;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+/* --- LISTA DA TURMA (Refatorada para UL/LI) --- */
+.class-list {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.class-list h3 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.names-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    font-size: 0.9rem;
+    /* Reset de estilo de lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.landgraf-highlight {
+    background-color: #e3f2fd;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #0d47a1;
+}
+
+.missing-people-alert {
+    margin-top: 2rem;
+    border-top: 1px dashed #ccc;
+    padding-top: 1rem;
+}

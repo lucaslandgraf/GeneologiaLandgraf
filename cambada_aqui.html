@@ -3,106 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crônicas e memórias do Colégio Marista Arquidiocesano (1962-1971).">
   <title>A Arquibancada da Arqui Cambada | GeneGraf</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="img/icon.png">
-  
-  <style>
-    .chronicle-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem 0 4rem;
-    }
-    
-    .chronicle-text {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: #333;
-        margin-bottom: 1.5rem;
-        text-align: justify;
-    }
-
-    .chronicle-highlight {
-        background-color: #fdfbf7;
-        border-left: 4px solid var(--copper);
-        padding: 20px;
-        margin: 2rem 0;
-        font-style: italic;
-        color: #555;
-    }
-
-    /* ESTILO PARA AS FOTOS DA CRÔNICA */
-    figure.memory-figure {
-        margin: 2rem 0;
-        text-align: center;
-        background: #f9f9f9;
-        border: 1px solid #ddd;
-        padding: 10px;
-        border-radius: 8px;
-    }
-
-    figure.memory-figure img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 4px;
-        display: block;
-        margin: 0 auto;
-        max-height: 500px; /* Limita altura para fotos muito verticais */
-    }
-
-    figure.memory-figure figcaption {
-        font-size: 0.9rem;
-        color: #666;
-        margin-top: 10px;
-        font-family: var(--font-body);
-        font-style: italic;
-    }
-
-    /* Placeholder para quando a imagem não existe */
-    .img-missing {
-        background-color: #eee;
-        border: 2px dashed #ccc;
-        color: #777;
-        padding: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: monospace;
-    }
-
-    .class-list {
-        background: #fff;
-        border: 1px solid #eee;
-        padding: 2rem;
-        border-radius: 8px;
-        margin-top: 2rem;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    }
-
-    .class-list h3 {
-        color: var(--primary);
-        border-bottom: 2px solid var(--accent);
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
-
-    .names-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 10px;
-        font-size: 0.9rem;
-    }
-
-    .landgraf-highlight {
-        background-color: #e3f2fd;
-        font-weight: bold;
-        padding: 2px 5px;
-        border-radius: 4px;
-        color: #0d47a1;
-    }
-  </style>
 </head>
 <body>
 
@@ -130,7 +38,7 @@
             <figcaption>Colégio Marista Arquidiocesano de São Paulo.</figcaption>
         </figure>
 
-        <h2 style="color: var(--primary); font-family: var(--font-display); margin-bottom: 1.5rem;">Quem somos nós?</h2>
+        <h2 class="chronicle-title">Quem somos nós?</h2>
         
         <p class="chronicle-text">
             Convivemos no Colégio Marista Arquidiocesano de São Paulo nos anos entre 1962 e 1971, do 3º Primário ao 3º Colegial. Ou seja, somos meninos (sim, no Arqui só tinha meninos) nascidos entre 1952 e 1954. Alguns entraram depois de 62, outros saíram antes de 71, mas atravessamos parte desse tempo juntos. Eu mesmo só estive lá entre 1965 e 1970. Três classes se embaralhavam, talvez houvesse um critério de quem era da turma A, B ou C, mas tivemos mais ou menos os mesmos professores.
@@ -206,7 +114,7 @@
             <figcaption>Turma dos professores, possivelmente de 1967.</figcaption>
         </figure>
 
-        <h3 style="color: var(--primary); font-family: var(--font-display); margin-top: 3rem;">O Grupo dos Cinco</h3>
+        <h3 class="chronicle-subtitle">O Grupo dos Cinco</h3>
         
         <figure class="memory-figure">
             <img src="img/2003ND.jpg" alt="Os cinco moleques" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
@@ -231,31 +139,32 @@
 
         <div class="class-list">
             <h3>🎓 Gente que já encontramos</h3>
-            <div class="names-grid">
-                <div>Abdo Aziz</div>
-                <div>Alcides Diniz</div>
-                <div>Alfredo Matta Junior</div>
-                <div>Alvaro Ramos</div>
-                <div>Antonio Carlos Barossi</div>
-                <div>Claudio Gama Pimentel</div>
-                <div>Dalton de Almeida Raphael</div>
-                <div>Eduardo Barros da Silva</div>
-                <div>Fabio Moreau</div>
-                <div class="landgraf-highlight">Fernando José Gomes Landgraf</div>
-                <div>Francisco Roberto G. dos Santos</div>
-                <div>Homero de Castro Neves</div>
-                <div>Jose Augusto de Souza Negrão</div>
-                <div>Jose Roberto Alves Freitas</div>
-                <div>Luiz Pavão</div>
-                <div>Marcelo Paes Barreto</div>
-                <div>Milton Freitas Martins</div>
-                <div>Paulo Eduardo Martins Araujo</div>
-                <div>Ricardo Graziano Chiorino</div>
-                <div>Roberto Gabriel Filho</div>
-            </div>
+            
+            <ul class="names-grid">
+                <li>Abdo Aziz</li>
+                <li>Alcides Diniz</li>
+                <li>Alfredo Matta Junior</li>
+                <li>Alvaro Ramos</li>
+                <li>Antonio Carlos Barossi</li>
+                <li>Claudio Gama Pimentel</li>
+                <li>Dalton de Almeida Raphael</li>
+                <li>Eduardo Barros da Silva</li>
+                <li>Fabio Moreau</li>
+                <li class="landgraf-highlight">Fernando José Gomes Landgraf</li>
+                <li>Francisco Roberto G. dos Santos</li>
+                <li>Homero de Castro Neves</li>
+                <li>Jose Augusto de Souza Negrão</li>
+                <li>Jose Roberto Alves Freitas</li>
+                <li>Luiz Pavão</li>
+                <li>Marcelo Paes Barreto</li>
+                <li>Milton Freitas Martins</li>
+                <li>Paulo Eduardo Martins Araujo</li>
+                <li>Ricardo Graziano Chiorino</li>
+                <li>Roberto Gabriel Filho</li>
+            </ul>
 
-            <div style="margin-top: 2rem; border-top: 1px dashed #ccc; padding-top: 1rem;">
-                <p><strong>Procura-se:</strong> Guerino Manfrini, Oliveiros, Jobel, Cavalcanti, Spacaccherchia, Nelson Sacks e um monte de outros</p><br>
+            <div class="missing-people-alert">
+                <p><strong>Procura-se:</strong> Guerino Manfrini, Oliveiros, Jobel, Cavalcanti, Spacaccherchia, Nelson Sacks e um monte de outros</p>
                 <p><em>Quem souber do paradeiro, avise para: <a href="mailto:f.landgraf@usp.br">f.landgraf@usp.br</a></em></p>
             </div>
         </div>
