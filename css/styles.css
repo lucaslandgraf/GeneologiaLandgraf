@@ -666,3 +666,174 @@ figure.memory-figure figcaption {
     border-top: 1px dashed #ccc;
     padding-top: 1rem;
 }
+
+/* --- Variáveis Globais (Cores e Fontes) --- */
+:root {
+  --primary: #4a2d1d;       /* Marrom Café */
+  --secondary: #f0e6d6;     /* Bege Claro */
+  --copper: #b87333;        /* Cobre/Bronze */
+  --text-color: #333333;
+  --bg-light: #fafafa;
+  
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+}
+
+/* --- Reset e Base --- */
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --- Layout e Containers --- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bio-container { 
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 2rem 0 4rem; 
+}
+
+/* --- Tipografia e Textos --- */
+.bio-title {
+  color: var(--primary); 
+  font-family: var(--font-display);
+  margin-bottom: 1rem;
+}
+
+.bio-text {
+  font-size: 1.05rem; 
+  line-height: 1.8; 
+  color: var(--text-color); 
+  margin-bottom: 1.2rem; 
+  text-align: justify;
+}
+
+.gen-title {
+  font-family: var(--font-display); 
+  color: var(--primary); 
+  font-size: 1.6rem; 
+  margin-top: 3rem; 
+  border-bottom: 1px solid #ddd; 
+  padding-bottom: 0.5rem; 
+  margin-bottom: 1.5rem;
+}
+
+.sub-title {
+  font-family: var(--font-display); 
+  color: var(--copper); 
+  font-size: 1.3rem; 
+  margin-top: 1.5rem; 
+  margin-bottom: 1rem;
+}
+
+.link-external {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* --- Componentes: Caixas de Destaque --- */
+.highlight-box {
+  background-color: #fdfbf7; 
+  border-left: 4px solid var(--copper); 
+  padding: 20px; 
+  margin: 2rem 0; 
+  border-radius: 4px;
+}
+
+/* --- Componentes: Árvore Genealógica --- */
+.renno-tree { 
+  list-style: none; 
+  padding-left: 0; 
+}
+
+.person-card {
+  background: #fff; 
+  border: 1px solid #eee; 
+  padding: 15px; 
+  border-radius: 8px; 
+  margin-bottom: 1rem; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+/* Variações do Cartão de Pessoa */
+.person-card.featured {
+  border-left: 4px solid var(--copper);
+}
+
+.person-card.secondary {
+  border-left: 4px solid var(--copper); 
+  background-color: var(--bg-light);
+}
+
+.person-name {
+  font-weight: 700; 
+  color: var(--text-color); 
+  display: block; 
+  margin-bottom: 5px; 
+  font-size: 1.1rem;
+}
+
+.person-details { 
+  font-size: 0.9rem; 
+  color: #666; 
+  line-height: 1.5; 
+}
+
+/* --- Listas e Sub-níveis --- */
+.sub-list {
+  margin-left: 20px; 
+  border-left: 2px solid #e0e0e0; 
+  padding-left: 15px; 
+  list-style: none; 
+  margin-top: 10px;
+}
+
+.descendant-group {
+  margin-left: 15px; 
+  margin-top: 5px; 
+  font-size: 0.9rem; 
+  color: #555;
+}
+
+.highlight-item {
+  background-color: #e3f2fd; 
+  padding: 5px; 
+  border-radius: 4px;
+  display: block; /* Para comportar quebras de linha melhor */
+}
+
+/* --- Botões --- */
+.btn-link {
+  display: inline-block; 
+  background-color: var(--secondary); 
+  color: var(--primary); 
+  padding: 5px 10px; 
+  border-radius: 4px; 
+  text-decoration: none; 
+  font-size: 0.8rem; 
+  font-weight: bold; 
+  margin-top: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-link:hover { 
+  background-color: #e3dcd0; 
+}
+
+/* --- Header e Footer (Genéricos - Adicione se tiver estilos específicos) --- */
+.header, .footer {
+  /* estilos de header/footer viriam aqui */
+  padding: 1rem 0;
+  background-color: #f8f8f8;
+}
