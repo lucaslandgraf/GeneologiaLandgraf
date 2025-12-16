@@ -779,3 +779,96 @@ figure.memory-figure figcaption {
   background-color: #e3dcd0; /* Um pouco mais escuro que secondary */
   color: var(--foreground);
 }
+
+/* =========================================
+   PÁGINA JOANA & MARTIM (Timeline)
+   ========================================= */
+
+/* Nota: Já existe uma .bio-container na seção Família Rennó.
+   Esta regra abaixo reforça o estilo para esta página específica. */
+.bio-container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 2rem 0 4rem; 
+}
+
+.timeline-block {
+    border-left: 3px solid var(--border);
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-block::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.timeline-year {
+    font-family: var(--font-display);
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.bio-text { 
+    font-size: 1.05rem; 
+    line-height: 1.8; 
+    color: #333; 
+    margin-bottom: 1rem; 
+    text-align: justify; 
+}
+
+/* Estilo das Imagens */
+figure.bio-figure { 
+    margin: 1.5rem 0; 
+    text-align: center; 
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+figure.bio-figure img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+
+figure.bio-figure figcaption { 
+    font-size: 0.9rem; 
+    color: #666; 
+    margin-top: 10px; 
+    font-style: italic; 
+}
+
+.img-placeholder { 
+    background: #eee; 
+    height: 250px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #777; 
+    border: 2px dashed #ccc; 
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Destaque para Lara e Ilana */
+.special-note {
+    background-color: #fff0f5;
+    border: 1px solid #ffc0cb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin-bottom: 3rem; 
+}
