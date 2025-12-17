@@ -680,13 +680,13 @@ figure.memory-figure figcaption {
 .bio-text {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #333; /* Você pode trocar por var(--foreground) se quiser padronizar */
+  color: #333; 
   margin-bottom: 1.2rem;
   text-align: justify;
 }
 
 .highlight-box {
-  background-color: #fdfbf7; /* Ou var(--background) se for similar */
+  background-color: #fdfbf7; 
   border-left: 4px solid var(--copper);
   padding: 20px;
   margin: 2rem 0;
