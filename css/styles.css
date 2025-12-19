@@ -1144,3 +1144,31 @@ figure.img-container figcaption {
     text-decoration: none; 
     color: var(--primary); 
 }
+
+/* =========================================
+   ADENDOS - PÁGINA OS LANDGRAF
+   ========================================= */
+
+/* Estilo específico para referência documental */
+.doc-ref {
+    font-size: 0.85rem;
+    color: #666;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px dotted #ccc;
+    margin-top: 1rem;
+    font-family: var(--font-body);
+}
+
+/* AJUSTE DE LARGURA DO CÓDIGO GENEALÓGICO
+   Substitui/Complementa a regra anterior para ser mais flexível.
+   Assim funciona tanto para códigos longos (Gomes) quanto curtos (Landgraf).
+*/
+.descendants-list li span.code { 
+    display: inline-block; 
+    font-size: 0.75rem; 
+    color: #999; 
+    min-width: 50px; /* Garante alinhamento mínimo */
+    margin-right: 10px; /* Dá espaço se o código for longo */
+    font-family: monospace; 
+}
