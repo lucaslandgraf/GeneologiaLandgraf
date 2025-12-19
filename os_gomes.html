@@ -9,92 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="img/icon.png">
-  <style>
-    /* Estilos específicos para esta página (Mesmo padrão de os_landgraf.html) */
-    .article-container { max-width: 800px; margin: 0 auto; padding-bottom: 4rem; }
-    
-    .article-block { margin-bottom: 4rem; text-align: justify; }
-    .article-block h2 { font-family: var(--font-display); color: var(--primary); margin-top: 2rem; margin-bottom: 1.5rem; font-size: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-    .article-block h3 { font-family: var(--font-display); color: var(--copper); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; }
-    .article-block p { margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.8; color: var(--foreground); }
-    
-    /* Estilo para Imagens e Legendas */
-    figure.img-container {
-        margin: 2rem 0;
-        text-align: center;
-        background: #fff;
-        padding: 1rem;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-    
-    /* Placeholder cinza - Apenas para a DIV de fallback */
-    .img-placeholder {
-        background-color: #eee;
-        color: #777;
-        width: 100%;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px;
-        margin-bottom: 0.5rem;
-        font-family: monospace;
-        border: 2px dashed #ccc;
-    }
-
-    /* A imagem real respeita a proporção (height: auto) */
-    figure img {
-        max-width: 100%;
-        height: auto; 
-        border-radius: 4px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    figcaption {
-        font-size: 0.9rem;
-        color: var(--muted);
-        font-style: italic;
-        margin-top: 0.5rem;
-        font-family: var(--font-body);
-    }
-
-    /* Box de Curiosidade Histórica */
-    .history-sidebar {
-        background: var(--secondary);
-        padding: 1.5rem;
-        border-radius: 8px;
-        margin: 2rem 0;
-        font-size: 0.95rem;
-        border-left: 4px solid var(--accent);
-    }
-    .history-sidebar h4 {
-        color: var(--primary);
-        font-family: var(--font-display);
-        margin-bottom: 0.5rem;
-        font-size: 1.1rem;
-    }
-
-    /* Genealogia */
-    .genealogy-tree { list-style: none; padding-left: 0; }
-    .genealogy-tree > li { margin-bottom: 2rem; background: #fff; padding: 1.5rem; border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
-    .genealogy-tree strong { color: var(--primary); font-family: var(--font-display); font-size: 1.3rem; display: block; margin-bottom: 0.5rem; }
-    .descendants-list { list-style: none; padding-left: 1rem; margin-top: 1rem; font-size: 1rem; color: #555; border-left: 2px solid var(--border); margin-left: 0.5rem; }
-    .descendants-list li { margin-bottom: 0.8rem; padding-left: 0.8rem; position: relative; }
-    .descendants-list li span.code { 
-        display: inline-block; 
-        font-size: 0.75rem; 
-        color: #999; 
-        width: 100px; /* Um pouco mais largo para os códigos longos dos Gomes */
-        font-family: monospace; 
-    }
-    
-    /* Breadcrumb */
-    .breadcrumb { margin-bottom: 2rem; font-size: 0.9rem; color: var(--muted); }
-    .breadcrumb a { text-decoration: none; color: var(--primary); }
-  </style>
 </head>
 <body>
   <header class="header">
@@ -127,14 +41,11 @@
             <a href="familia.html">← Voltar para Família</a>
         </div>
 
-        <!-- 1. INTRODUÇÃO -->
         <article class="article-block">
             <h2>Os Gomes de Brazópolis</h2>
             <p><strong>Brazópolis</strong> é uma cidade do sul de Minas Gerais, até 1909 conhecida como São Caetano da Vargem Grande, um distrito de Itajubá. Seu nome atual é uma homenagem a um filho da terra, <strong>Francisco Braz Pereira Gomes</strong>, nosso ancestral, político importante na província mineira entre 1880 e 1914, e pai de Wenceslau Braz Pereira Gomes, presidente do Brasil entre 1914 e 1918.</p>
             
-            <!-- CAMPO DE IMAGEM: CARTÃO POSTAL -->
             <figure class="img-container">
-                <!-- Substitua o src pelo caminho real da imagem -->
                 <img src="img/brazopolis.jpg" alt="Cartão postal de Brazópolis em 1900" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                 <div class="img-placeholder" style="display:none">Inserir Imagem: Cartão Postal (1900)</div>
                 <figcaption>Cartão postal enviado por Zéquinha Gomes em 1971, retratando a cidade em 1900. Na casa indicada pela seta viveram Pedro Gomes, Tonico Rennó e Francisco Brás.</figcaption>
@@ -148,20 +59,17 @@
             </div>
         </article>
 
-        <!-- 2. ORIGEM DO SOBRENOME -->
         <article class="article-block">
             <h2>Origem do Sobrenome</h2>
             <p>O sobrenome Gomes é comum na Espanha e em Portugal. Segundo alguns estudos, é um sobrenome de formação patronímica: filho de Goma (do gótico <em>guma</em>, homem). A forma primitiva seria Gomici, evoluindo para Gomece, Gomez e finalmente Gomes.</p>
             <p>Quase nada sabemos da vida do fundador da descendência, <strong>Antonio José Gomes</strong>, o português que aos 18 anos estabeleceu-se no Córrego dos Bugres, bairro do Maranhão (hoje parte de Virgínia/MG) no início do século XIX. Ele faleceu em 10/12/1831 na fazenda S. João, cujos filhos continuaram proprietários.</p>
         </article>
 
-        <!-- 3. GENEALOGIA -->
         <article class="article-block">
             <h2>A Descendência no Brasil</h2>
             <p>Abaixo, a estrutura genealógica a partir do fundador Antonio José Gomes.</p>
             
             <ul class="genealogy-tree">
-                <!-- 1ª Geração -->
                 <li>
                     <strong>1ª Geração: O Fundador</strong>
                     <div class="descendants-list">
@@ -178,7 +86,6 @@
                     </div>
                 </li>
 
-                <!-- 2ª Geração -->
                 <li>
                     <strong>2ª Geração: Filhos do Capitão Gomes</strong>
                     <div class="descendants-list">
@@ -191,7 +98,6 @@
                     </div>
                 </li>
 
-                <!-- 3ª Geração -->
                 <li>
                     <strong>3ª Geração: Os Ramos Políticos</strong>
                     <div class="descendants-list">
@@ -212,7 +118,6 @@
                     </div>
                 </li>
 
-                <!-- 4ª Geração -->
                 <li>
                     <strong>4ª Geração: Família de José Alfredo Gomes</strong>
                     <div class="descendants-list">
@@ -227,7 +132,6 @@
                     </div>
                 </li>
 
-                <!-- 5ª Geração -->
                 <li>
                     <strong>5ª Geração (Parcial)</strong>
                     <div class="descendants-list">

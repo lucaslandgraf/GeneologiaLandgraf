@@ -985,3 +985,162 @@ figure.bio-figure figcaption {
     .book-cover-container { max-width: 100%; width: 200px; }
     .book-details h2 { font-size: 1.8rem; }
 }
+
+/* =========================================
+   PÁGINA OS GOMES (Estilos Específicos)
+   ========================================= */
+
+.article-container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding-bottom: 4rem; 
+}
+
+.article-block { 
+    margin-bottom: 4rem; 
+    text-align: justify; 
+}
+
+.article-block h2 { 
+    font-family: var(--font-display); 
+    color: var(--primary); 
+    margin-top: 2rem; 
+    margin-bottom: 1.5rem; 
+    font-size: 2rem; 
+    border-bottom: 1px solid var(--border); 
+    padding-bottom: 0.5rem; 
+}
+
+.article-block h3 { 
+    font-family: var(--font-display); 
+    color: var(--copper); 
+    margin-top: 2rem; 
+    margin-bottom: 1rem; 
+    font-size: 1.5rem; 
+}
+
+.article-block p { 
+    margin-bottom: 1.2rem; 
+    font-size: 1.05rem; 
+    line-height: 1.8; 
+    color: var(--foreground); 
+}
+
+/* Estilo para Imagens e Legendas */
+figure.img-container {
+    margin: 2rem 0;
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Placeholder cinza - Apenas para a DIV de fallback */
+.img-placeholder {
+    background-color: #eee;
+    color: #777;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    font-family: monospace;
+    border: 2px dashed #ccc;
+}
+
+/* A imagem real respeita a proporção (height: auto) */
+figure.img-container img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+figure.img-container figcaption {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-family: var(--font-body);
+}
+
+/* Box de Curiosidade Histórica */
+.history-sidebar {
+    background: var(--secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    border-left: 4px solid var(--accent);
+}
+
+.history-sidebar h4 {
+    color: var(--primary);
+    font-family: var(--font-display);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Genealogia */
+.genealogy-tree { 
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.genealogy-tree > li { 
+    margin-bottom: 2rem; 
+    background: #fff; 
+    padding: 1.5rem; 
+    border: 1px solid var(--border); 
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03); 
+}
+
+.genealogy-tree strong { 
+    color: var(--primary); 
+    font-family: var(--font-display); 
+    font-size: 1.3rem; 
+    display: block; 
+    margin-bottom: 0.5rem; 
+}
+
+.descendants-list { 
+    list-style: none; 
+    padding-left: 1rem; 
+    margin-top: 1rem; 
+    font-size: 1rem; 
+    color: #555; 
+    border-left: 2px solid var(--border); 
+    margin-left: 0.5rem; 
+}
+
+.descendants-list li { 
+    margin-bottom: 0.8rem; 
+    padding-left: 0.8rem; 
+    position: relative; 
+}
+
+.descendants-list li span.code { 
+    display: inline-block; 
+    font-size: 0.75rem; 
+    color: #999; 
+    width: 100px; /* Um pouco mais largo para os códigos longos dos Gomes */
+    font-family: monospace; 
+}
+
+/* Breadcrumb Específico */
+.breadcrumb { 
+    margin-bottom: 2rem; 
+    font-size: 0.9rem; 
+    color: var(--muted); 
+}
+
+.breadcrumb a { 
+    text-decoration: none; 
+    color: var(--primary); 
+}
