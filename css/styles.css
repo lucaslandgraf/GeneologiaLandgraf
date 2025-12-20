@@ -1172,3 +1172,25 @@ figure.img-container figcaption {
     margin-right: 10px; /* Dá espaço se o código for longo */
     font-family: monospace; 
 }
+
+/* =========================================
+   ADENDOS - PÁGINA OS SCHEIN
+   ========================================= */
+
+/* Box de destaque/aviso (Usado para o aviso de Manutenção) */
+.highlight-box { 
+    background: var(--card); 
+    padding: 2rem; 
+    border-radius: 8px; 
+    border-left: 4px solid var(--primary); 
+    margin: 2rem 0; 
+    font-style: italic; 
+    color: var(--muted); 
+}
+
+/* Pequeno ajuste para listas aninhadas dentro da árvore,
+   caso elas não estejam pegando o recuo correto globalmente */
+.descendants-list ul {
+    list-style: none;
+    padding-left: 1rem;
+}
