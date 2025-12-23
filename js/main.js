@@ -17,7 +17,7 @@ document.querySelectorAll('.nav-mobile a').forEach(link => {
   });
 });
 
-// Smooth scroll for anchor links
+// Scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();

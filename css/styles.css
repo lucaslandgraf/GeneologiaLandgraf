@@ -1129,7 +1129,7 @@ figure.img-container figcaption {
     display: inline-block; 
     font-size: 0.75rem; 
     color: #999; 
-    width: 100px; /* Um pouco mais largo para os códigos longos dos Gomes */
+    width: 100px; /* Um pouco mais largo para os códigos que forem longo dos Gomes */
     font-family: monospace; 
 }
 
@@ -1162,7 +1162,7 @@ figure.img-container figcaption {
 
 /* AJUSTE DE LARGURA DO CÓDIGO GENEALÓGICO
    Substitui/Complementa a regra anterior para ser mais flexível.
-   Assim funciona tanto para códigos longos (Gomes) quanto curtos (Landgraf).
+   Assim funciona tanto para códigos longos (Gomes) quanto curtos (Landgraf). 
 */
 .descendants-list li span.code { 
     display: inline-block; 
